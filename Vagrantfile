@@ -4,6 +4,7 @@ Vagrant.configure(2) do |config|
   # https://docs.vagrantup.com.
   
   config.vm.box = "ubuntu/trusty64"
+  config.vm.network "public_network"
 
   # Enable provisioning with a shell script.
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
