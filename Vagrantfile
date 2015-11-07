@@ -4,7 +4,8 @@ Vagrant.configure(2) do |config|
   # https://docs.vagrantup.com.
   
   config.vm.box = "ubuntu/trusty64"
-  config.vm.network "forwarded_port", guest: 5000, host: 5000
+  config.vm.network "public_network"
+  #config.vm.network "forwarded_port", guest: 5000, host: 5000
 
 
   # Enable provisioning with a shell script.
