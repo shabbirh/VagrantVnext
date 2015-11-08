@@ -40,7 +40,7 @@ Vagrant.configure(2) do |config|
     sudo npm install -g generator-aspnet  
     echo "All done.  Be sure to add --server-url http://0.0.0.0:5000 to the 'web' definition in your project.json file if you want to see anything on your host :)"
     echo "Organising Zsh and your working environment"
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    git clone http://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
     chsh -s /bin/zsh vagrant
     echo "Ready to go - enjoy!"
