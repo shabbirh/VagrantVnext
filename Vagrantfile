@@ -11,6 +11,10 @@ Vagrant.configure(2) do |config|
 
   # Enable provisioning with a shell script.
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
+    echo "Making sure OS is properly updated"
+    sudo apt-get update
+    sudo apt-get -y upgrade
+    echo "Installing Mono"
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
     echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
     sudo apt-get update
