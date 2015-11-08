@@ -37,7 +37,7 @@ vagrant up
 
 Also when using this with ASP.NET vNext - if you want to work on a WebApp - be sure to modify your ``` project.json ``` file.  Add the following:
 ```
---server-url http://0.0.0.0:5000
+--server.urls http://0.0.0.0:5000
 ```
 to the line that reads
 ```
@@ -49,7 +49,7 @@ to the line that reads
 To further simply, the line above should read:
 ```
 "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel --server-url http://0.0.0.0:5000"
+    "web": "Microsoft.AspNet.Server.Kestrel --server.urls http://0.0.0.0:5000"
   },
 ```
 if you want to have any sort of remote (or even from your vagrant host to guest) access to an ASP.NET vNext website.

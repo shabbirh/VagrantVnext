@@ -51,7 +51,7 @@ Vagrant.configure(2) do |config|
     sudo apt-get -y install htop
     echo "Ready to go - enjoy!"
     echo "=== IMPORTANT NOTE ==="
-    echo "Be sure to add --server-url http://0.0.0.0:5000 to the"
+    echo "Be sure to add --server.urls http://0.0.0.0:5000 to the"
     echo "'web' definition in your project.json file if you want to see anything on your host :)"
     echo ""
   SHELL
