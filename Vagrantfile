@@ -47,7 +47,7 @@ Vagrant.configure(2) do |config|
     sudo add-apt-repository ppa:djcj/screenfetch
     sudo apt-get update
     sudo apt-get -y install fortune
-
+    sudo apt-get -y install screenfetch
     echo "Ready to go - enjoy!"
     echo "=== IMPORTANT NOTE ==="
     echo "Be sure to add --server-url http://0.0.0.0:5000 to the"
