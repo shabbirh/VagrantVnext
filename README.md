@@ -20,6 +20,7 @@ The base box that has been used is by the lovely folk at boxcutter (https://vagr
  * zsh
  * Screen fetch
  * Fortune
+ * Htop
  
 ### Instructions
 
