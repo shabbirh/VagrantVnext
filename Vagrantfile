@@ -3,8 +3,8 @@ Vagrant.configure(2) do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
   
-  #config.vm.box = "ubuntu/trusty64" # use this for virtualbox based setups
-  config.vm.box = "parallels/ubuntu-14.04" # use this when using parallels on a mac.
+  config.vm.box = "boxcutter/ubuntu1404" # using the boxcutter box as it works across vmware, parallels and virtualbox.
+
   config.vm.network "public_network"
   #config.vm.network "forwarded_port", guest: 5000, host: 5000
 
@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
     curl -sL https://deb.nodesource.com/setup | sudo bash -
     sudo apt-get update
     sudo apt-get -y install nodejs
-    sudo apt-get install build-essential libssl-dev
+    sudo apt-get -y install build-essential libssl-dev
     sudo npm update -g npm  
     sudo npm install -g yo  
     sudo npm install -g generator-aspnet  
