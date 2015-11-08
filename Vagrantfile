@@ -42,7 +42,7 @@ Vagrant.configure(2) do |config|
     echo "Organising Zsh and your working environment"
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-    chsh -s /bin/zsh vagrant
+    sudo chsh -s /bin/zsh vagrant
     echo "Ready to go - enjoy!"
     echo ""
   SHELL
