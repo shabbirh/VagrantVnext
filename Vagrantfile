@@ -43,10 +43,11 @@ Vagrant.configure(2) do |config|
     cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
     sudo chsh -s /bin/zsh vagrant
     curl https://raw.githubusercontent.com/shabbirh/VagrantVnext/master/zshrc.default > ~/.zshrc
-    sudo apt-get -y install python-software-properties
-    sudo add-apt-repository ppa:djcj
+    sudo apt-get -y install software-properties-common python-software-properties
+    sudo add-apt-repository ppa:djcj/screenfetch
     sudo apt-get update
-    sudo apt-get -y install screenfetch fortune
+    sudo apt-get -y install fortune
+
     echo "Ready to go - enjoy!"
     echo "=== IMPORTANT NOTE ==="
     echo "Be sure to add --server-url http://0.0.0.0:5000 to the"
